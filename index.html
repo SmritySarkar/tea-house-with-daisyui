@@ -22,7 +22,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'gradient-start': '#FF8938',
+                'gradient-end': '#F00',
               }
             }
           }
@@ -41,8 +42,8 @@
     <header class="container mx-auto">
         <!-- Banner Section -->
         <section>
-            <div class="hero">
-                <div class="hero-content flex-col lg:flex-row">
+            <div class="my-20">
+                <div class="flex justify-between items-center flex-col lg:flex-row">
                     <!-- Banner Content -->
                     <div>
                         <h1 class="text-7xl font-extrabold">
@@ -50,13 +51,13 @@
                             tea time at The <br>
                             Tea House</h1>
                         <p class="py-6 text-lg font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                        <button class="btn btn-primary">Explore More</button>
+                        <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white font-bold border-none">Explore More <img src="images/arrow.png" alt=""></button>
                     </div>
                     <!-- Banner Content -->
 
                     <!-- Banner Image -->
                     <div>
-                        <img src="images/banner.png" class="max-w-sm " />
+                        <img src="images/banner.png" class=" " />
                         <!-- Ratings Badge -->
                         <div class="-mt-14 flex items-center gap-4 drop-shadow-lg rounded-md bg-white p-5 w-60">
                             <i class="fa-solid fa-star text-4xl text-amber-400"></i>
@@ -162,7 +163,7 @@
         <!-- Great Tea Section -->
 
         <!-- Super Client Section -->
-        <section class="my-24 rounded-xl flex flex-col lg:flex-row gap-12 bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+        <section class="my-24 rounded-xl flex flex-col lg:flex-row gap-12 bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
           <!-- Client Content -->
           <div class="flex items-center lg:pr-28">
             <div class="spcae-y-5  text-white">
@@ -280,8 +281,55 @@
         </section>
         <!-- News And Events Section -->
     </main>
-    <footer>
 
+    <footer class=" text-black px-4 lg:px-48 py-10 bg-base-200 text-base-content bg-gradient-to-r from-amber-100 to-red-200">
+      <div class="flex justify-between my-24">
+        <img src="images/cup.png" alt="">
+        <p>
+          <span>Ready to get started?</span>
+          <button class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end border-none font-bold">Get Started</button>
+        </p>
+      </div>
+      <div class="footer">
+        <nav>
+          <header class="text-xl font-semibold text-black">Services</header> 
+          <a class="link link-hover">Branding</a> 
+          <a class="link link-hover">Design</a> 
+          <a class="link link-hover">Marketing</a> 
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header class=" font-semibold text-black text-xl">Company</header> 
+          <a class="link link-hover">About us</a> 
+          <a class="link link-hover">Contact</a> 
+          <a class="link link-hover">Jobs</a> 
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class=" font-semibold text-black text-xl">Legal</header> 
+          <a class="link link-hover">Terms of use</a> 
+          <a class="link link-hover">Privacy policy</a> 
+          <a class="link link-hover">Cookie policy</a>
+        </nav> 
+        <form>
+          <header class=" font-semibold text-xl">Newsletter</header> 
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text text-black">Enter your email address</span>
+            </label> 
+            <div class="relative">
+              <input type="text" class="py-4 bg-transparent border-b-2 border-black outline-none" /> 
+              <button class="btn text-white absolute top-0 right-0 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end border-none">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <aside class="text-center mt-10 p-4 text-base-content text-black">
+        <p>&copy;2027 UIDesign.to - All rights reserved.</p>
+      </aside>
     </footer>
+
 </body>
 </html>
